@@ -1,0 +1,515 @@
+{
+  "images": [
+    {
+      "name": "I adore that!",
+      "keywords": [
+        "clippy",
+        "eyes",
+        "admire",
+        "adore",
+        "wide-eyed",
+        "wideeyed",
+        "eyed",
+        "sparkle",
+        "jealous"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Admire.gif"
+    },
+    {
+      "name": "Are you there?",
+      "keywords": [
+        "clippy",
+        "speech",
+        "bubble",
+        "question",
+        "are",
+        "you",
+        "there?"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_AreYouThere.gif"
+    },
+    {
+      "name": "I'm hurt",
+      "keywords": [
+        "clippy",
+        "bandages",
+        "bandaged",
+        "hurt",
+        "injured",
+        "sick",
+        "ill",
+        "unwell",
+        "bandaid",
+        "broken"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Bandaged.gif"
+    },
+    {
+      "name": "I'm bored",
+      "keywords": [
+        "clippy",
+        "bored",
+        "tired",
+        "click",
+        "laptop",
+        "desk",
+        "social",
+        "media",
+        "web",
+        "distract",
+        "distracted"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Bored.gif"
+    },
+    {
+      "name": "Brb!",
+      "keywords": [
+        "clippy",
+        "brb!",
+        "be",
+        "right",
+        "back",
+        "speech",
+        "bubble"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Brb.gif"
+    },
+    {
+      "name": "Coffee?",
+      "keywords": [
+        "clippy",
+        "coffee?",
+        "cup",
+        "drink",
+        "caffeine",
+        "espresso",
+        "latte",
+        "hot",
+        "steam",
+        "thermos",
+        "raised",
+        "eyebrow"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Coffee.gif"
+    },
+    {
+      "name": "Coffee?",
+      "keywords": [
+        "clippy",
+        "coffee?",
+        "mug",
+        "cup",
+        "drink",
+        "hot",
+        "steam",
+        "caffeine"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_CoffeeMug.gif"
+    },
+    {
+      "name": "Happy hour!",
+      "keywords": [
+        "clippy",
+        "beer",
+        "happy",
+        "hour!",
+        "drink",
+        "booze",
+        "cheers",
+        "bar",
+        "drunk"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_HappyHour.gif"
+    },
+    {
+      "name": "Hello there!",
+      "keywords": [
+        "clippy",
+        "speech",
+        "bubble",
+        "hello",
+        "there!",
+        "hi"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_HelloThere.gif"
+    },
+    {
+      "name": "I'm here!",
+      "keywords": [
+        "clippy",
+        "speech",
+        "bubble",
+        "here!",
+        "i'm"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_ImHere.gif"
+    },
+    {
+      "name": "Looks great!",
+      "keywords": [
+        "clippy",
+        "speech",
+        "bubble",
+        "looks",
+        "great!",
+        "good",
+        "nice"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_LooksGreat.gif"
+    },
+    {
+      "name": "Love <3",
+      "keywords": [
+        "clippy",
+        "love",
+        "hearts",
+        "blush",
+        "like",
+        "pink",
+        "<3"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Love.gif"
+    },
+    {
+      "name": "Meeting time!",
+      "keywords": [
+        "clippy",
+        "meet",
+        "meeting",
+        "present",
+        "interview",
+        "notes",
+        "laptop",
+        "desk",
+        "office",
+        "talk",
+        "chat",
+        "discuss",
+        "speech",
+        "bubbles",
+        "time!"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Meeting.gif"
+    },
+    {
+      "name": "Nap time!",
+      "keywords": [
+        "clippy",
+        "nap",
+        "desk",
+        "tired",
+        "sleep",
+        "snore",
+        "rest",
+        "time!"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Nap.gif"
+    },
+    {
+      "name": "Nice!",
+      "keywords": [
+        "clippy",
+        "nice!",
+        "speech",
+        "bubble"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Nice.gif"
+    },
+    {
+      "name": "No probs!",
+      "keywords": [
+        "clippy",
+        "no",
+        "problem",
+        "speech",
+        "bubble",
+        "probs!"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_NoProbs.gif"
+    },
+    {
+      "name": "Hi!",
+      "keywords": [
+        "clippy!",
+        "hi!",
+        "hello",
+        "wave",
+        "introduce"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Normal.gif"
+    },
+    {
+      "name": "Ok!",
+      "keywords": [
+        "clippy",
+        "speech",
+        "bubble",
+        "ok!",
+        "okay",
+        "yes",
+        "agree"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Ok.gif"
+    },
+    {
+      "name": "I'm OOF",
+      "keywords": [
+        "clippy",
+        "desk",
+        "oof",
+        "out",
+        "facilities",
+        "off",
+        "gone",
+        "office"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Oof.gif"
+    },
+    {
+      "name": "Getting paid!",
+      "keywords": [
+        "clippy",
+        "money",
+        "paid!",
+        "dollars",
+        "rain",
+        "green",
+        "payday",
+        "pay",
+        "rich",
+        "wealthy"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Payday.gif"
+    },
+    {
+      "name": "It looks like you're trying to post a giphy",
+      "keywords": [
+        "clippy",
+        "help",
+        "speech",
+        "bubble",
+        "giphy",
+        "post",
+        "ask",
+        "question",
+        "would",
+        "looks",
+        "trying"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_PostGiphy.gif"
+    },
+    {
+      "name": "It looks like you meant to post a link",
+      "keywords": [
+        "clippy",
+        "help",
+        "link",
+        "speech",
+        "bubble",
+        "post",
+        "ask",
+        "question",
+        "would",
+        "looks",
+        "trying"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_PostLink.gif"
+    },
+    {
+      "name": "Business, business, business. Numbers?",
+      "keywords": [
+        "clippy",
+        "present",
+        "presentation",
+        "meeting",
+        "chart",
+        "talk",
+        "show",
+        "graph",
+        "business",
+        "numbers?"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Presentation.gif"
+    },
+    {
+      "name": "I'm sad :(",
+      "keywords": [
+        "clippy",
+        "sad",
+        "blue",
+        "blues",
+        "disappointed",
+        "disappoint",
+        ":("
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Sad.gif"
+    },
+    {
+      "name": "Ship it!",
+      "keywords": [
+        "clippy",
+        "ship",
+        "it",
+        "captain",
+        "complete",
+        "done"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_ShipIt.gif"
+    },
+    {
+      "name": "I'm sick :(",
+      "keywords": [
+        "clippy",
+        "sick",
+        "ill",
+        "unwell",
+        "barf",
+        "puke",
+        "green",
+        ":("
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Sick.gif"
+    },
+    {
+      "name": "Spy",
+      "keywords": [
+        "clippy",
+        "sneak",
+        "peek",
+        "spy",
+        "creep",
+        "suspicious"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Spy.gif"
+    },
+    {
+      "name": "Poor investments",
+      "keywords": [
+        "clippy",
+        "poor",
+        "stocks",
+        "bad",
+        "red",
+        "broke",
+        "graph",
+        "chart",
+        "down"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_StocksDown.gif"
+    },
+    {
+      "name": "Sun!",
+      "keywords": [
+        "clippy",
+        "sun!",
+        "sunshine",
+        "sweat",
+        "sunglasses",
+        "shades",
+        "hot",
+        "glasses"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Sun.gif"
+    },
+    {
+      "name": "Cool!",
+      "keywords": [
+        "clippy",
+        "cool!",
+        "star",
+        "sunglasses",
+        "shades",
+        "peek",
+        "glasses"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Sunglasses.gif"
+    },
+    {
+      "name": "Suprise!",
+      "keywords": [
+        "clippy",
+        "surprise!",
+        "surprised",
+        "jump",
+        "startle",
+        "gasp",
+        "!!"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Surprise.gif"
+    },
+    {
+      "name": "Thank you!",
+      "keywords": [
+        "clippy",
+        "speech",
+        "bubble",
+        "thanks",
+        "appreciate",
+        "you!"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_ThankYou.gif"
+    },
+    {
+      "name": "Stuck in traffic!",
+      "keywords": [
+        "clippy",
+        "car",
+        "traffic!",
+        "rage",
+        "road",
+        "drive",
+        "commute",
+        "gridlock",
+        "congested",
+        "angry",
+        "slow",
+        "stuck",
+        "in"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Traffic.gif"
+    },
+    {
+      "name": "What?",
+      "keywords": [
+        "clippy",
+        "question",
+        "ask",
+        "what?",
+        "speech",
+        "bubble",
+        "?"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_What.gif"
+    },
+    {
+      "name": "It looks like you're writing a letter",
+      "keywords": [
+        "clippy",
+        "help",
+        "ask",
+        "question",
+        "speech",
+        "bubble",
+        "would",
+        "letter",
+        "write",
+        "looks",
+        "like"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_WriteLetter.gif"
+    },
+    {
+      "name": "Yeah!",
+      "keywords": [
+        "clippy",
+        "yeah!",
+        "speech",
+        "bubble",
+        "yay",
+        "hooray",
+        "yes"
+      ],
+      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Yeah.gif"
+    }
+  ]
+}
