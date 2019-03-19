@@ -1,3 +1,17 @@
+![Clippy! logo](https://raw.githubusercontent.com/OfficeDev/microsoft-teams-clippy-app/master/logo.png)
+
+# Clippy!
+
+Clippy is an App for Microsoft Teams that you can deploy to your tenant to add a little fun to your messages!
+
+![Clippy! screenshot 1](https://raw.githubusercontent.com/OfficeDev/microsoft-teams-clippy-app/master/screenshot1.png)
+
+![Clippy! screenshot 2](https://raw.githubusercontent.com/OfficeDev/microsoft-teams-clippy-app/master/screenshot2.png)
+
+To deploy Clippy!:
+1. Download the [manifest file](https://raw.githubusercontent.com/OfficeDev/microsoft-teams-clippy-app/master/manifest/Clippy.zip)
+1. Contact your Office 365 Tenant administrator to deploy the Clippy! manifest via the LOB app deployment pipeline:
+![LOB deployment entry point](https://raw.githubusercontent.com/OfficeDev/microsoft-teams-clippy-app/master/lob.png)
 
 # Contributing
 

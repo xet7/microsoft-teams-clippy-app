@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Clippy</name>
+    </assembly>
+    <members>
+        <member name="T:Clippy.Cards.ClippyComposeExtensionCard">
+            <summary>
+            Card to <see cref="T:Clippy.Models.Clippy"/> return in the results for the Compose Extension query.
+            </summary>
+        </member>
+        <member name="M:Clippy.Cards.ClippyComposeExtensionCard.#ctor(Clippy.Models.Clippy)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clippy.Cards.ClippyComposeExtensionCard"/> class.
+            </summary>
+            <param name="clippy">The <see cref="T:Clippy.Models.Clippy"/> for this card.</param>
+        </member>
+        <member name="M:Clippy.Cards.ClippyComposeExtensionCard.ToAttachment">
+            <summary>
+            Turns the card into an <see cref="T:Microsoft.Bot.Schema.Attachment"/>.
+            </summary>
+            <returns>An <see cref="T:Microsoft.Bot.Schema.Attachment"/>.</returns>
+        </member>
+        <member name="T:Clippy.Cards.ClippyContentCard">
+            <summary>
+            Card for the content of the <see cref="T:Clippy.Models.Clippy"/> to return in the results for the Compose Extension query.
+            </summary>
+        </member>
+        <member name="M:Clippy.Cards.ClippyContentCard.#ctor(Clippy.Models.Clippy)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clippy.Cards.ClippyContentCard"/> class.
+            </summary>
+            <param name="clippy">The <see cref="T:Clippy.Models.Clippy"/> for this card.</param>
+        </member>
+        <member name="M:Clippy.Cards.ClippyContentCard.ToAttachment">
+            <summary>
+            Turns the card into an <see cref="T:Microsoft.Bot.Schema.Attachment"/>.
+            </summary>
+            <returns>An <see cref="T:Microsoft.Bot.Schema.Attachment"/>.</returns>
+        </member>
+        <member name="T:Clippy.Cards.ClippyPreviewCard">
+            <summary>
+            Card for the preview of the <see cref="T:Clippy.Models.Clippy"/> to return in the results for the Compose Extension query.
+            </summary>
+        </member>
+        <member name="M:Clippy.Cards.ClippyPreviewCard.#ctor(Clippy.Models.Clippy)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clippy.Cards.ClippyPreviewCard"/> class.
+            </summary>
+            <param name="clippy">The <see cref="T:Clippy.Models.Clippy"/> for this card.</param>
+        </member>
+        <member name="M:Clippy.Cards.ClippyPreviewCard.ToAttachment">
+            <summary>
+            Turns the card into an <see cref="T:Microsoft.Bot.Schema.Attachment"/>.
+            </summary>
+            <returns>An <see cref="T:Microsoft.Bot.Schema.Attachment"/>.</returns>
+        </member>
+        <member name="T:Clippy.Config.Settings">
+            <summary>
+            Concrete implementation of the <see cref="T:Clippy.Interfaces.ISettings"/> interface that uses the <see cref="T:Microsoft.Extensions.Configuration.ConfigurationBuilder"/> class to get the config.
+            </summary>
+        </member>
+        <member name="M:Clippy.Config.Settings.#ctor(Microsoft.Azure.WebJobs.ExecutionContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clippy.Config.Settings"/> class.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.Azure.WebJobs.ExecutionContext"/>.</param>
+        </member>
+        <member name="P:Clippy.Config.Settings.MicrosoftAppId">
+            <inheritdoc/>
+        </member>
+        <member name="T:Clippy.Extensions.ActivityExtensions">
+            <summary>
+            Extension methods for the <see cref="T:Microsoft.Bot.Schema.Activity"/> class.
+            </summary>
+        </member>
+        <member name="M:Clippy.Extensions.ActivityExtensions.IsComposeExtensionQuery(Microsoft.Bot.Schema.Activity)">
+            <summary>
+            Determines if this <see cref="T:Microsoft.Bot.Schema.Activity"/> describes a Compose Extension query or not.
+            </summary>
+            <param name="activity">The <see cref="T:Microsoft.Bot.Schema.Activity"/>.</param>
+            <returns>True if this <see cref="T:Microsoft.Bot.Schema.Activity"/> is a Compose Extension query. False otherwise.</returns>
+        </member>
+        <member name="T:Clippy.Extensions.AdaptiveCardExtensions">
+            <summary>
+            Extension methods for the <see cref="T:AdaptiveCards.AdaptiveCard"/> class.
+            </summary>
+        </member>
+        <member name="M:Clippy.Extensions.AdaptiveCardExtensions.ToAttachment(AdaptiveCards.AdaptiveCard)">
+            <summary>
+            Turns the card into an <see cref="T:Microsoft.Bot.Schema.Attachment"/>.
+            </summary>
+            <param name="card">The <see cref="T:AdaptiveCards.AdaptiveCard"/> to convert.</param>
+            <returns>An <see cref="T:Microsoft.Bot.Schema.Attachment"/>.</returns>
+        </member>
+        <member name="T:Clippy.Extensions.AttachmentExtensions">
+            <summary>
+            Extension methods for the <see cref="T:Microsoft.Bot.Schema.Attachment"/> class.
+            </summary>
+        </member>
+        <member name="M:Clippy.Extensions.AttachmentExtensions.ToComposeExtensionResult(Microsoft.Bot.Schema.Attachment,Microsoft.Bot.Schema.Attachment)">
+            <summary>
+            Converts the <see cref="T:Microsoft.Bot.Schema.Attachment"/> into a Compose Extension query result.
+            </summary>
+            <param name="content">The content <see cref="T:Microsoft.Bot.Schema.Attachment"/>.</param>
+            <param name="preview">The preview <see cref="T:Microsoft.Bot.Schema.Attachment"/>.</param>
+            <returns>The Compose Extension query result <see cref="T:Microsoft.Bot.Schema.Attachment"/>.</returns>
+        </member>
+        <member name="T:Clippy.Extensions.AttachmentExtensions.ComposeExtensionResult">
+            <summary>
+            Private class to format the Compose Extension result <see cref="T:Microsoft.Bot.Schema.Attachment"/> properly,
+            </summary>
+        </member>
+        <member name="P:Clippy.Extensions.AttachmentExtensions.ComposeExtensionResult.Preview">
+            <summary>
+            Gets or sets the preview <see cref="T:Microsoft.Bot.Schema.Attachment"/>.
+            </summary>
+        </member>
+        <member name="T:Clippy.Extensions.ComposeExtensionValueExtensions">
+            <summary>
+            Extension methods for the <see cref="T:Clippy.WebModels.ComposeExtensionValue"/> class.
+            </summary>
+        </member>
+        <member name="M:Clippy.Extensions.ComposeExtensionValueExtensions.GetParameterValue(Clippy.WebModels.ComposeExtensionValue)">
+            <summary>
+            Returns the first and only parameter value from the Compose Extesnion query value or null if one was not present.
+            </summary>
+            <param name="composeExtensionValue">The Compose Extension query value.</param>
+            <returns>The parameter value if one was present. Null otherwise.</returns>
+        </member>
+        <member name="T:Clippy.Interfaces.IClippySetIndexer">
+            <summary>
+            Interface describing all the methods of a class that can index a <see cref="T:Clippy.Models.ClippySet"/>.
+            </summary>
+        </member>
+        <member name="M:Clippy.Interfaces.IClippySetIndexer.IndexClippySetAsync(Clippy.Models.ClippySet,System.Threading.CancellationToken)">
+            <summary>
+            Indexes a given <see cref="T:Clippy.Models.ClippySet"/> for future querying.
+            </summary>
+            <param name="clippySet">The <see cref="T:Clippy.Models.ClippySet"/> to index.</param>
+            <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/>.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> to await for the result.</returns>
+        </member>
+        <member name="M:Clippy.Interfaces.IClippySetIndexer.FindClippiesByQuery(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Finds a non-duplicate set of <see cref="T:Clippy.Models.Clippy"/> objects given an input query.
+            </summary>
+            <param name="query">The input query.</param>
+            <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/>.</param>
+            <returns>A non-duplicate set of <see cref="T:Clippy.Models.Clippy"/> objects.</returns>
+        </member>
+        <member name="T:Clippy.Interfaces.IClippySetRepository">
+            <summary>
+            Interface describing all the methods of a class that can retrieve <see cref="T:Clippy.Models.ClippySet"/> objects.
+            </summary>
+        </member>
+        <member name="M:Clippy.Interfaces.IClippySetRepository.FetchClippySetAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Returns a <see cref="T:Clippy.Models.ClippySet"/> object given it's Id.
+            </summary>
+            <param name="clippySetId">The <see cref="T:Clippy.Models.ClippySet"/> object's Id.</param>
+            <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/>.</param>
+            <returns>The resulting <see cref="T:Clippy.Models.ClippySet"/> if one was found. Null otherwise.</returns>
+        </member>
+        <member name="T:Clippy.Interfaces.ISettings">
+            <summary>
+            Interface describing all of the app settings.
+            </summary>
+        </member>
+        <member name="P:Clippy.Interfaces.ISettings.MicrosoftAppId">
+            <summary>
+            Gets the Microsoft App Id.
+            </summary>
+        </member>
+        <member name="T:Clippy.MessagesHttpFunction">
+            <summary>
+            Azure Function that handles HTTP messages from BotFramework.
+            </summary>
+        </member>
+        <member name="M:Clippy.MessagesHttpFunction.Run(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.Extensions.Logging.ILogger,Microsoft.Azure.WebJobs.ExecutionContext)">
+            <summary>
+            Method that is called by the Azure Function framework when this Azure Function is invoked.
+            </summary>
+            <param name="req">The <see cref="T:Microsoft.AspNetCore.Http.HttpRequest"/>.</param>
+            <param name="log">The <see cref="T:Microsoft.Extensions.Logging.ILogger"/>.</param>
+            <param name="context">The <see cref="T:Microsoft.Azure.WebJobs.ExecutionContext"/>.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that results in an <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> when awaited.</returns>
+        </member>
+        <member name="M:Clippy.MessagesHttpFunction.GetAuthorizationHeader(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            Gets the authorization header from the <see cref="T:Microsoft.AspNetCore.Http.HttpRequest"/>.
+            </summary>
+            <param name="req">The <see cref="T:Microsoft.AspNetCore.Http.HttpRequest"/>/</param>
+            <exception cref="T:System.UnauthorizedAccessException">If there is no authorization header.</exception>
+            <returns>The authorization header.</returns>
+        </member>
+        <member name="M:Clippy.MessagesHttpFunction.ParseRequestBody(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            Attempts to parse the <see cref="T:Microsoft.AspNetCore.Http.HttpRequest"/> body into a <see cref="T:Microsoft.Bot.Schema.Activity"/> object.
+            </summary>
+            <param name="req">The <see cref="T:Microsoft.AspNetCore.Http.HttpRequest"/>.</param>
+            <exception cref="T:Newtonsoft.Json.JsonReaderException">If the <see cref="T:Microsoft.AspNetCore.Http.HttpRequest"/> body could not be parsed properly.</exception>
+            <returns>The <see cref="T:Microsoft.Bot.Schema.Activity"/> object.</returns>
+        </member>
+        <member name="T:Clippy.Models.Clippy">
+            <summary>
+            Model describing the <see cref="T:Clippy.Models.Clippy"/> object.
+            </summary>
+        </member>
+        <member name="M:Clippy.Models.Clippy.#ctor(System.String,System.Uri,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clippy.Models.Clippy"/> class.
+            </summary>
+            <param name="name">The name of the <see cref="T:Clippy.Models.Clippy"/>.</param>
+            <param name="imageUri">The image <see cref="T:System.Uri"/> of the <see cref="T:Clippy.Models.Clippy"/>.</param>
+            <param name="keywords">The keywords associated with the <see cref="T:Clippy.Models.Clippy"/>.</param>
+        </member>
+        <member name="P:Clippy.Models.Clippy.Name">
+            <summary>
+            Gets the name of the <see cref="T:Clippy.Models.Clippy"/>.
+            </summary>
+        </member>
+        <member name="P:Clippy.Models.Clippy.ImageUri">
+            <summary>
+            Gets the image <see cref="T:System.Uri"/> of the <see cref="T:Clippy.Models.Clippy"/>.
+            </summary>
+        </member>
+        <member name="P:Clippy.Models.Clippy.Keywords">
+            <summary>
+            Gets the keywords of the <see cref="T:Clippy.Models.Clippy"/>.
+            </summary>
+        </member>
+        <member name="T:Clippy.Models.ClippySet">
+            <summary>
+            Model describing a set of <see cref="T:Clippy.Models.Clippy"/> object.
+            </summary>
+        </member>
+        <member name="M:Clippy.Models.ClippySet.#ctor(System.String,System.Collections.Generic.IEnumerable{Clippy.Models.Clippy})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clippy.Models.ClippySet"/> class.
+            </summary>
+            <param name="name">The name of the <see cref="T:Clippy.Models.ClippySet"/>.</param>
+            <param name="clippies">The <see cref="T:Clippy.Models.Clippy"/> objects in the set.</param>
+        </member>
+        <member name="P:Clippy.Models.ClippySet.Name">
+            <summary>
+            Gets the name of the <see cref="T:Clippy.Models.ClippySet"/>.
+            </summary>
+        </member>
+        <member name="M:Clippy.Models.ClippySet.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Clippy.Models.ClippySet.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="T:Clippy.Providers.ClippySetIndexer">
+            <summary>
+            A concrete implementation of the <see cref="T:Clippy.Interfaces.IClippySetIndexer"/> interface.
+            </summary>
+        </member>
+        <member name="M:Clippy.Providers.ClippySetIndexer.IndexClippySetAsync(Clippy.Models.ClippySet,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:Clippy.Providers.ClippySetIndexer.FindClippiesByQuery(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Clippy.Providers.ClippySetRepository">
+            <summary>
+            A concrete implementation of the <see cref="T:Clippy.Interfaces.IClippySetRepository"/> interface.
+            </summary>
+        </member>
+        <member name="M:Clippy.Providers.ClippySetRepository.FetchClippySetAsync(System.Guid,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Clippy.WebModels.ComposeExtensionParameter">
+            <summary>
+            Class used to serialize and deserialize a Compose Extension parameter.
+            </summary>
+        </member>
+        <member name="P:Clippy.WebModels.ComposeExtensionParameter.Name">
+            <summary>
+            Gets or sets the name of the parameter.
+            </summary>
+        </member>
+        <member name="P:Clippy.WebModels.ComposeExtensionParameter.Value">
+            <summary>
+            Gets or sets the value of the parameter.
+            </summary>
+        </member>
+        <member name="T:Clippy.WebModels.ComposeExtensionQueryOptions">
+            <summary>
+            Class used to serialize and deserialize a Compose Extension query options.
+            </summary>
+        </member>
+        <member name="P:Clippy.WebModels.ComposeExtensionQueryOptions.Skip">
+            <summary>
+            Gets or sets the skip of the query options.
+            </summary>
+        </member>
+        <member name="P:Clippy.WebModels.ComposeExtensionQueryOptions.Count">
+            <summary>
+            Gets or sets the count of the query options.
+            </summary>
+        </member>
+        <member name="T:Clippy.WebModels.ComposeExtensionResponse">
+            <summary>
+            Class used to serialize and deserialize a Compose Extension response.
+            </summary>
+        </member>
+        <member name="P:Clippy.WebModels.ComposeExtensionResponse.ComposeExtensionResult">
+            <summary>
+            Gets or sets the result of the response.
+            </summary>
+        </member>
+        <member name="T:Clippy.WebModels.ComposeExtensionResult">
+            <summary>
+            Class used to serialize and deserialize a Compose Extension result.
+            </summary>
+        </member>
+        <member name="P:Clippy.WebModels.ComposeExtensionResult.Type">
+            <summary>
+            Gets or sets the type of the result.
+            </summary>
+        </member>
+        <member name="P:Clippy.WebModels.ComposeExtensionResult.AttachmentLayout">
+            <summary>
+            Gets or sets the attachment layout of the result.
+            </summary>
+        </member>
+        <member name="P:Clippy.WebModels.ComposeExtensionResult.Attachments">
+            <summary>
+            Gets or sets the attachments of the result.
+            </summary>
+        </member>
+        <member name="T:Clippy.WebModels.ComposeExtensionValue">
+            <summary>
+            Class used to serialize and deserialize a Compose Extension value.
+            </summary>
+        </member>
+        <member name="P:Clippy.WebModels.ComposeExtensionValue.CommandId">
+            <summary>
+            Gets or sets the command Id of the value.
+            </summary>
+        </member>
+        <member name="P:Clippy.WebModels.ComposeExtensionValue.Parameters">
+            <summary>
+            Gets or sets the parameters of the value.
+            </summary>
+        </member>
+        <member name="P:Clippy.WebModels.ComposeExtensionValue.QueryOptions">
+            <summary>
+            Gets or sets the query options of the value.
+            </summary>
+        </member>
+    </members>
+</doc>

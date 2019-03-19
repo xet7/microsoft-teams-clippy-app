@@ -1,0 +1,52 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.3/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.3",
+    "version": "1.0.0",
+    "id": "20cb281d-c6c5-446f-b4a3-c8dec6a19f8e",
+    "packageName": "com.microsoft.teams.clippy",
+    "developer": {
+        "name": "Microsoft Corp.",
+        "websiteUrl": "https://aka.ms/msteamsdevcenter",
+        "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=512132",
+        "termsOfUseUrl": "https://aka.ms/st1pbotttermsofservice"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Clippy!",
+        "full": "Clippy!"
+    },
+    "description": {
+        "short": "The helpful Clippy comes back to enhance messaging in Microsoft Teams",
+        "full": "The helpful paperclip, Clippy, comes back to enhance your Microsoft Teams messaging experience with a new and amazing palatte of animated icons!"
+    },
+    "accentColor": "#FFFFFF",
+    "composeExtensions": [
+        {
+            "botId": "20cb281d-c6c5-446f-b4a3-c8dec6a19f8e",
+            "canUpdateConfiguration": false,
+            "commands": [
+                {
+                    "id": "Search",
+                    "title": "Search",
+                    "description": "",
+                    "initialRun": true,
+                    "parameters": [
+                        {
+                            "name": "keyword",
+                            "title": "keyword",
+                            "description": "search for a clippy"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
