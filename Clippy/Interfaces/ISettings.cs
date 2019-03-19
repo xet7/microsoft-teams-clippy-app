@@ -7,9 +7,6 @@
 namespace Clippy.Interfaces
 {
     using System;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using Clippy.Models;
 
     /// <summary>
     /// Interface describing all of the app settings.
@@ -20,5 +17,10 @@ namespace Clippy.Interfaces
         /// Gets the Microsoft App Id.
         /// </summary>
         string MicrosoftAppId { get; }
+
+        /// <summary>
+        /// Gets the config uri for the clippy set.
+        /// </summary>
+        Uri ConfigUri { get; }
     }
 }

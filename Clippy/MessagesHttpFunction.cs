@@ -35,20 +35,20 @@ namespace Clippy
         /// Method that is called by the Azure Function framework when this Azure Function is invoked.
         /// </summary>
         /// <param name="req">The <see cref="HttpRequest"/>.</param>
-        /// <param name="log">The <see cref="ILogger"/>.</param>
+        /// <param name="logger">The <see cref="ILogger"/>.</param>
         /// <param name="context">The <see cref="ExecutionContext"/>.</param>
         /// <returns>A <see cref="Task"/> that results in an <see cref="IActionResult"/> when awaited.</returns>
         [FunctionName("messages")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)] HttpRequest req,
-            ILogger log,
+            ILogger logger,
             ExecutionContext context)
         {
-            log.LogInformation("Messages function received a request.");
+            logger.LogInformation("Messages function received a request.");
 
-            ISettings settings = new Settings(context);
-            IClippySetRepository clippySetRepository = new ClippySetRepository();
-            IClippySetIndexer clippySetIndexer = new ClippySetIndexer();
+            ISettings settings = new Settings(logger, context);
+            IClippySetRepository clippySetRepository = new ClippySetRepository(logger, settings);
+            IClippySetIndexer clippySetIndexer = new ClippySetIndexer(logger);
             ICredentialProvider credentialProvider = new SimpleCredentialProvider(settings.MicrosoftAppId, null);
             IChannelProvider channelProvider = new SimpleChannelProvider();
 
@@ -61,25 +61,25 @@ namespace Clippy
             }
             catch (JsonReaderException e)
             {
-                log.LogDebug("Request payload was incorrect. JSON parser failed with '{0}'.", e.Message);
+                logger.LogDebug(e, "JSON parser failed to parse request payload.");
                 return new BadRequestResult();
             }
-            catch (UnauthorizedAccessException)
+            catch (UnauthorizedAccessException e)
             {
-                log.LogDebug("Request was not propertly authorized.");
+                logger.LogDebug(e, "Request was not propertly authorized.");
                 return new UnauthorizedResult();
             }
 
             if (!activity.IsComposeExtensionQuery())
             {
-                log.LogDebug("Request payload was not a compose extension query.");
+                logger.LogDebug("Request payload was not a compose extension query.");
                 return new BadRequestObjectResult($"Clippy only supports compose extension query activity types.");
             }
 
             var queryValue = JObject.FromObject(activity.Value).ToObject<ComposeExtensionValue>();
             var query = queryValue.GetParameterValue();
 
-            var clippySet = await clippySetRepository.FetchClippySetAsync(Guid.Empty);
+            var clippySet = await clippySetRepository.FetchClippySetAsync();
             await clippySetIndexer.IndexClippySetAsync(clippySet);
             var clippies = await clippySetIndexer.FindClippiesByQuery(query);
 

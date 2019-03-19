@@ -17,11 +17,10 @@ namespace Clippy.Interfaces
     public interface IClippySetRepository
     {
         /// <summary>
-        /// Returns a <see cref="ClippySet"/> object given it's Id.
+        /// Returns a <see cref="ClippySet"/> object.
         /// </summary>
-        /// <param name="clippySetId">The <see cref="ClippySet"/> object's Id.</param>
         /// <param name="cancellationToken">A <see cref="CancellationToken"/>.</param>
         /// <returns>The resulting <see cref="ClippySet"/> if one was found. Null otherwise.</returns>
-        Task<ClippySet> FetchClippySetAsync(Guid clippySetId, CancellationToken cancellationToken = default(CancellationToken));
+        Task<ClippySet> FetchClippySetAsync(CancellationToken cancellationToken = default(CancellationToken));
     }
 }

@@ -7,21 +7,26 @@
 namespace Clippy.Providers
 {
     using System;
+    using System.IO;
+    using System.Linq;
+    using System.Net.Http;
     using System.Threading;
     using System.Threading.Tasks;
     using Clippy.Interfaces;
     using Clippy.Models;
+    using Clippy.Providers.Serialization;
+    using Microsoft.Extensions.Logging;
+    using Newtonsoft.Json;
 
     /// <summary>
     /// A concrete implementation of the <see cref="IClippySetRepository"/> interface.
     /// </summary>
     public class ClippySetRepository : IClippySetRepository
     {
-        /// <inheritdoc />
-        public Task<ClippySet> FetchClippySetAsync(Guid clippySetId, CancellationToken cancellationToken = default(CancellationToken))
-        {
 #pragma warning disable SA1118 // Parameter must not span multiple lines
-            ClippySet clippySet = new ClippySet("Clippy!", new Clippy[]
+        private static readonly ClippySet DefaultClippySet = new ClippySet(
+            "Clippy!",
+            new Clippy[]
             {
                 new Clippy("I adore that!", new Uri("https://msteamsclippy.azureedge.net/150/Clippy_Admire.gif"), new string[] { "clippy", "eyes", "admire", "wide-eyed", "wideeyed", "eyed", "sparkle", "jealous", "adore" }),
                 new Clippy("Are you there?", new Uri("https://msteamsclippy.azureedge.net/150/Clippy_AreYouThere.gif"), new string[] { "clippy", "speech", "bubble", "question", "are", "you", "there?" }),
@@ -62,7 +67,55 @@ namespace Clippy.Providers
             });
 #pragma warning restore SA1118 // Parameter must not span multiple lines
 
-            return Task.FromResult(clippySet);
+        private readonly ILogger logger;
+        private readonly ISettings settings;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ClippySetRepository"/> class.
+        /// </summary>
+        /// <param name="logger">The <see cref="ILogger"/>.</param>
+        /// <param name="settings">The <see cref="ISettings"/>.</param>
+        public ClippySetRepository(ILogger logger, ISettings settings)
+        {
+            this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            this.settings = settings ?? throw new ArgumentNullException(nameof(settings));
+        }
+
+        /// <inheritdoc />
+        public async Task<ClippySet> FetchClippySetAsync(CancellationToken cancellationToken = default(CancellationToken))
+        {
+            using (var scope = this.logger.BeginScope($"{nameof(ClippySetRepository)}.{nameof(this.FetchClippySetAsync)}"))
+            {
+                var configUri = this.settings.ConfigUri;
+                if (configUri == null)
+                {
+                    this.logger.LogInformation($"{nameof(this.settings.ConfigUri)} was not a valid absolute URI; default clippy set will be used.");
+                    return DefaultClippySet;
+                }
+
+                using (var httpClient = new HttpClient())
+                {
+                    var response = await httpClient.GetAsync(configUri);
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        this.logger.LogError($"GET {configUri} returned {response.StatusCode}: {response.ReasonPhrase}; default clippy set will be used.");
+                        return DefaultClippySet;
+                    }
+
+                    try
+                    {
+                        var responseContent = await response.Content.ReadAsStringAsync();
+                        var clippyConfig = JsonConvert.DeserializeObject<ClippyConfigDTO>(responseContent);
+                        var clippies = clippyConfig?.Images?.Select(image => new Clippy(image.Name, new Uri(image.ImageUri), image.Keywords)).ToArray();
+                        return new ClippySet("Clippy!", clippies);
+                    }
+                    catch (JsonException e)
+                    {
+                        this.logger.LogError(e, $"Response from GET {configUri} could not be parsed properly; default clippy set will be used.");
+                        return DefaultClippySet;
+                    }
+                }
+            }
         }
     }
 }
