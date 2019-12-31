@@ -4,7 +4,7 @@ This release adds the following features:
 
 - [Add Clippy images from https://imgur.com/a/gJsji6z and fix links at config.json](https://github.com/xet7/microsoft-teams-clippy-app/commit/1630ac26cf7cb8aae4a0ec3c614da1dcb8333ab6). Thanks to imgur user and xet7.
 - [Add find.sh script for searching code](https://github.com/xet7/microsoft-teams-clippy-app/commit/2b9fb3c870be026a28625a54f3eb37c5db8dc5b3). Thanks to xet7.
-- Added ChangeLog based on commits at Git history. Thanks to xet7.
+- [Added ChangeLog based on commits at Git history](https://github.com/xet7/microsoft-teams-clippy-app/commit/2dd37285b2b9890fc1e2697028798f9bb24c3e06). Thanks to xet7.
 
 Thanks to above GitHub and imgur users for their contributions and translators for their translations.
 
