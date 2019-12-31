@@ -13,7 +13,7 @@
         "sparkle",
         "jealous"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Admire.gif"
+      "imageUri": "img/Clippy_Admire.gif"
     },
     {
       "name": "Are you there?",
@@ -26,7 +26,7 @@
         "you",
         "there?"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_AreYouThere.gif"
+      "imageUri": "img/Clippy_AreYouThere.gif"
     },
     {
       "name": "I'm hurt",
@@ -42,7 +42,7 @@
         "bandaid",
         "broken"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Bandaged.gif"
+      "imageUri": "img/Clippy_Bandaged.gif"
     },
     {
       "name": "I'm bored",
@@ -59,7 +59,7 @@
         "distract",
         "distracted"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Bored.gif"
+      "imageUri": "img/Clippy_Bored.gif"
     },
     {
       "name": "Brb!",
@@ -72,7 +72,7 @@
         "speech",
         "bubble"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Brb.gif"
+      "imageUri": "img/Clippy_Brb.gif"
     },
     {
       "name": "Coffee?",
@@ -90,7 +90,7 @@
         "raised",
         "eyebrow"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Coffee.gif"
+      "imageUri": "img/Clippy_Coffee.gif"
     },
     {
       "name": "Coffee?",
@@ -104,7 +104,7 @@
         "steam",
         "caffeine"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_CoffeeMug.gif"
+      "imageUri": "img/Clippy_CoffeeMug.gif"
     },
     {
       "name": "Happy hour!",
@@ -119,7 +119,7 @@
         "bar",
         "drunk"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_HappyHour.gif"
+      "imageUri": "img/Clippy_HappyHour.gif"
     },
     {
       "name": "Hello there!",
@@ -131,7 +131,7 @@
         "there!",
         "hi"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_HelloThere.gif"
+      "imageUri": "img/Clippy_HelloThere.gif"
     },
     {
       "name": "I'm here!",
@@ -142,7 +142,7 @@
         "here!",
         "i'm"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_ImHere.gif"
+      "imageUri": "img/Clippy_ImHere.gif"
     },
     {
       "name": "Looks great!",
@@ -155,7 +155,7 @@
         "good",
         "nice"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_LooksGreat.gif"
+      "imageUri": "img/Clippy_LooksGreat.gif"
     },
     {
       "name": "Love <3",
@@ -168,7 +168,7 @@
         "pink",
         "<3"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Love.gif"
+      "imageUri": "img/Clippy_Love.gif"
     },
     {
       "name": "Meeting time!",
@@ -189,7 +189,7 @@
         "bubbles",
         "time!"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Meeting.gif"
+      "imageUri": "img/Clippy_Meeting.gif"
     },
     {
       "name": "Nap time!",
@@ -203,7 +203,7 @@
         "rest",
         "time!"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Nap.gif"
+      "imageUri": "img/Clippy_Nap.gif"
     },
     {
       "name": "Nice!",
@@ -213,7 +213,7 @@
         "speech",
         "bubble"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Nice.gif"
+      "imageUri": "img/Clippy_Nice.gif"
     },
     {
       "name": "No probs!",
@@ -225,7 +225,7 @@
         "bubble",
         "probs!"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_NoProbs.gif"
+      "imageUri": "img/Clippy_NoProbs.gif"
     },
     {
       "name": "Hi!",
@@ -236,7 +236,7 @@
         "wave",
         "introduce"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Normal.gif"
+      "imageUri": "img/Clippy_Normal.gif"
     },
     {
       "name": "Ok!",
@@ -249,7 +249,7 @@
         "yes",
         "agree"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Ok.gif"
+      "imageUri": "img/Clippy_Ok.gif"
     },
     {
       "name": "I'm OOF",
@@ -263,7 +263,7 @@
         "gone",
         "office"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Oof.gif"
+      "imageUri": "img/Clippy_Oof.gif"
     },
     {
       "name": "Getting paid!",
@@ -279,7 +279,7 @@
         "rich",
         "wealthy"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Payday.gif"
+      "imageUri": "img/Clippy_Payday.gif"
     },
     {
       "name": "It looks like you're trying to post a giphy",
@@ -296,7 +296,7 @@
         "looks",
         "trying"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_PostGiphy.gif"
+      "imageUri": "img/Clippy_PostGiphy.gif"
     },
     {
       "name": "It looks like you meant to post a link",
@@ -313,7 +313,7 @@
         "looks",
         "trying"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_PostLink.gif"
+      "imageUri": "img/Clippy_PostLink.gif"
     },
     {
       "name": "Business, business, business. Numbers?",
@@ -329,7 +329,7 @@
         "business",
         "numbers?"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Presentation.gif"
+      "imageUri": "img/Clippy_Presentation.gif"
     },
     {
       "name": "I'm sad :(",
@@ -342,7 +342,7 @@
         "disappoint",
         ":("
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Sad.gif"
+      "imageUri": "img/Clippy_Sad.gif"
     },
     {
       "name": "Ship it!",
@@ -354,7 +354,7 @@
         "complete",
         "done"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_ShipIt.gif"
+      "imageUri": "img/Clippy_ShipIt.gif"
     },
     {
       "name": "I'm sick :(",
@@ -368,7 +368,7 @@
         "green",
         ":("
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Sick.gif"
+      "imageUri": "img/Clippy_Sick.gif"
     },
     {
       "name": "Spy",
@@ -380,7 +380,7 @@
         "creep",
         "suspicious"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Spy.gif"
+      "imageUri": "img/Clippy_Spy.gif"
     },
     {
       "name": "Poor investments",
@@ -395,7 +395,7 @@
         "chart",
         "down"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_StocksDown.gif"
+      "imageUri": "img/Clippy_StocksDown.gif"
     },
     {
       "name": "Sun!",
@@ -409,7 +409,7 @@
         "hot",
         "glasses"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Sun.gif"
+      "imageUri": "img/Clippy_Sun.gif"
     },
     {
       "name": "Cool!",
@@ -422,7 +422,7 @@
         "peek",
         "glasses"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Sunglasses.gif"
+      "imageUri": "img/Clippy_Sunglasses.gif"
     },
     {
       "name": "Suprise!",
@@ -435,7 +435,7 @@
         "gasp",
         "!!"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Surprise.gif"
+      "imageUri": "img/Clippy_Surprise.gif"
     },
     {
       "name": "Thank you!",
@@ -447,7 +447,7 @@
         "appreciate",
         "you!"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_ThankYou.gif"
+      "imageUri": "img/Clippy_ThankYou.gif"
     },
     {
       "name": "Stuck in traffic!",
@@ -466,7 +466,7 @@
         "stuck",
         "in"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Traffic.gif"
+      "imageUri": "img/Clippy_Traffic.gif"
     },
     {
       "name": "What?",
@@ -479,7 +479,7 @@
         "bubble",
         "?"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_What.gif"
+      "imageUri": "img/Clippy_What.gif"
     },
     {
       "name": "It looks like you're writing a letter",
@@ -496,7 +496,7 @@
         "looks",
         "like"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_WriteLetter.gif"
+      "imageUri": "img/Clippy_WriteLetter.gif"
     },
     {
       "name": "Yeah!",
@@ -509,7 +509,7 @@
         "hooray",
         "yes"
       ],
-      "imageUri": "https://msteamsclippy.azureedge.net/150/Clippy_Yeah.gif"
+      "imageUri": "img/Clippy_Yeah.gif"
     }
   ]
 }
