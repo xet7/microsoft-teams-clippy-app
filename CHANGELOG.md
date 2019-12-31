@@ -1,4 +1,4 @@
-v0.04 2019-12-31 Clippy release
+## v0.04 2019-12-31 Clippy release
 
 This release adds the following features:
 
@@ -10,7 +10,7 @@ This release adds the following features:
 
 Thanks to above GitHub and imgur users for their contributions and translators for their translations.
 
-v0.03 2019-03-26 Clippy release
+## v0.03 2019-03-26 Clippy release
 
 This release adds the following updates:
 
@@ -20,7 +20,7 @@ This release adds the following updates:
 
 Thanks to above GitHub users for their contributions and translators for their translations.
 
-v0.02 2019-03-19 Clippy release
+## v0.02 2019-03-19 Clippy release
 
 This release adds the following features:
 
@@ -33,7 +33,7 @@ and fixes the following bugs:
 
 Thanks to above GitHub users for their contributions and translators for their translations.
 
-v0.01 2019-03-19 Clippy release
+## v0.01 2019-03-19 Clippy release
 
 This release adds the following features:
 
