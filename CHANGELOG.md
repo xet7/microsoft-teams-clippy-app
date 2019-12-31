@@ -4,6 +4,7 @@ This release adds the following updates:
 
 - [Move Contributing info from README.md to CONTRIBUTING.md with
   more details added](https://github.com/xet7/microsoft-teams-clippy-app/commit/7523e51001822ae589fc2f7a49a08161312982ad).
+  Thanks to xet7.
 
 Thanks to above GitHub users for their contributions and translators for their translations.
 
