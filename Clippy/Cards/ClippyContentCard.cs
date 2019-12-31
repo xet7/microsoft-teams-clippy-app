@@ -33,7 +33,7 @@ namespace Clippy.Cards
         /// Turns the card into an <see cref="Attachment"/>.
         /// </summary>
         /// <returns>An <see cref="Attachment"/>.</returns>
-        public Attachment ToAttachment()
+        public Attachment ToAttachment("1.0.3")
         {
             var card = new AdaptiveCard
             {
