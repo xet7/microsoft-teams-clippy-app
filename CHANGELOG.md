@@ -1,6 +1,11 @@
 ## Upcoming Clippy release
 
-This release adds the following updates:
+This release adds the following features:
+
+- [Commercial Support provided by Wekan Team](https://github.com/xet7/microsoft-teams-clippy-app/commit/aaee83159fd1f229e08f82cc44a627b12c99b538).
+  Thanks to xet7.
+
+and adds the following updates:
 
 - [Move Contributing info from README.md to CONTRIBUTING.md with
   more details added](https://github.com/xet7/microsoft-teams-clippy-app/commit/7523e51001822ae589fc2f7a49a08161312982ad).
