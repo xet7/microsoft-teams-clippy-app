@@ -4,6 +4,8 @@ This release adds the following features:
 
 - [Commercial Support provided by Wekan Team](https://github.com/xet7/microsoft-teams-clippy-app/commit/aaee83159fd1f229e08f82cc44a627b12c99b538).
   Thanks to xet7.
+- [Add GitHub issue template](https://github.com/xet7/microsoft-teams-clippy-app/commit/14108a2ed3f8fc07ba4de6fe759253a32fddc1fd).
+  Thanks to xet7.
 
 and adds the following updates:
 
